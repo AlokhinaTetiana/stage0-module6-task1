@@ -4,15 +4,17 @@ public class Animal {
     private String color;
     private int numberOfPaws;
     private boolean hasFur;
+    public Animal(){}
 
-    Animal(String color, int numberOfPaws, boolean hasFur){
+    public Animal(String color, int numberOfPaws, boolean hasFur){
         this.color=color;
         this.numberOfPaws=numberOfPaws;
         this.hasFur=hasFur;
     }
+
     public String getDescription(){
         String hasFurString;
-        if(hasFur==true){
+        if(hasFur){
             hasFurString="a";
         }
         else {
